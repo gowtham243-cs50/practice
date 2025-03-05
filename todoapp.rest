@@ -1,0 +1,26 @@
+### GET /
+GET http://localhost:5000
+
+
+###
+POST http://localhost:5003/auth/register
+Content-Type: application/json 
+
+{
+    "username":"gowtham@gmail.com",
+    "password":"*******"
+}
+
+###
+
+POST  http://localhost:5003/auth/login
+Content-Type: application/json
+
+{   
+    "username":"gowtham@gmail.com",
+    "password":"*******"
+}
+
+###
+GET  http://localhost:5003/todos
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQwODA5Njc1LCJleHAiOjE3NDA4OTYwNzV9.v9Zj1agHLpZx8ScA53E8ETdr2SLomNhUax3PhytKdGY
